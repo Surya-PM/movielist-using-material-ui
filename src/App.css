@@ -1,55 +1,73 @@
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 30px;
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.pricing .card-body {
+  margin: 10px;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
-.movie-list {
-  padding: 24px;
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.pricing hr {
+  margin: 1.5rem 0;
 }
 
-.movie-container {
-  width: 340px;
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
 }
 
-/* .movie-container:hover {
-  box-shadow: 0 0 15px black;
-} */
-
-.movie-specs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
 }
 
-.movie-poster {
-  height: 500px;
-  width: 340px;
-  object-fit: cover;
-  background-color: teal;
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+.pricing ul {
+  list-style: none;
+}
+.pricing ul li {
+  margin-bottom: 1rem;
 }
 
-.movie-rating {
-  font-size: 18px;
-  font-weight: 400;
+.pricing .text-muted {
+  opacity: 0.7;
 }
 
-.movie-name {
-  font-size: 24px;
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
 }
 
-.likes-dislikes {
-  font-size: 20px;
-}
-.counter-container {
-  display: flex;
-  gap: 10px;
-}
-.add-movie-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card-body:hover {
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .pricing .card-body:hover .btn {
+    opacity: 1;
+  }
 }
